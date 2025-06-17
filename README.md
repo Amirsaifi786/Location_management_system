@@ -45,9 +45,7 @@ storage/
 ├── states.json
 └── cities.json
 
-lua
-Copy
-Edit
+
 
 ---
 
@@ -64,9 +62,7 @@ Schema::create('countries', function (Blueprint $table) {
     $table->timestamps();
 });
 states table
-php
-Copy
-Edit
+
 Schema::create('states', function (Blueprint $table) {
     $table->id();
     $table->string('state_name');
@@ -74,9 +70,7 @@ Schema::create('states', function (Blueprint $table) {
     $table->timestamps();
 });
 cities table
-php
-Copy
-Edit
+
 Schema::create('cities', function (Blueprint $table) {
     $table->id();
     $table->string('city_name');
@@ -85,9 +79,7 @@ Schema::create('cities', function (Blueprint $table) {
 });
 🧩 Models & Relationships
 Country.php
-php
-Copy
-Edit
+
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
@@ -102,9 +94,7 @@ class Country extends Model
     }
 }
 State.php
-php
-Copy
-Edit
+
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
@@ -124,9 +114,7 @@ class State extends Model
     }
 }
 City.php
-php
-Copy
-Edit
+
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
@@ -143,8 +131,7 @@ class City extends Model
 📂 JSON File Format
 storage/app/countries.json
 json
-Copy
-Edit
+
 {
   "countries": [
     {
@@ -157,8 +144,7 @@ Edit
 }
 storage/app/states.json
 json
-Copy
-Edit
+
 {
   "states": [
     {
@@ -170,8 +156,7 @@ Edit
 }
 storage/app/cities.json
 json
-Copy
-Edit
+
 {
   "cities": [
     {
@@ -185,19 +170,14 @@ Edit
 Generate command:
 
 bash
-Copy
-Edit
+
 php artisan make:command ImportLocationData
 Register it in the file:
 
-php
-Copy
-Edit
+
 protected $signature = 'import:locations';
 handle() method
-php
-Copy
-Edit
+
 public function handle()
 {
     $this->info('Starting data import...');
@@ -248,8 +228,7 @@ public function handle()
 }
 🚀 Run Import Command
 bash
-Copy
-Edit
+
 php artisan import:locations
 This will import data from the JSON files into your database.
 
