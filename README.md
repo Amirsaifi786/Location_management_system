@@ -15,19 +15,19 @@ This project provides a way to **bulk import Countries, States, and Cities** fro
 
 ---
 ### Country Add
-![Country Add](screenshots/countryadd.png)
+![Country Add](screenshots/addcountry.png)
 
 ### Country List
 ![Country List](screenshots/countrylist.png)
 
 ### State Add
-![State Add](screenshots/stateadd.png)
+![State Add](screenshots/addstate.png)
 
 ### State List
 ![State List](screenshots/statelist.png)
 
 ### City Add
-![City Add](screenshots/cityadd.png)
+![City Add](screenshots/addcity.png)
 
 ### City List
 ![City List](screenshots/citylist.png)
