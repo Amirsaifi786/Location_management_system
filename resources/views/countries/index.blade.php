@@ -14,7 +14,7 @@
         <thead>
             <tr>
                 <th>ID</th>
-                <th>Coluntry Name</th>
+                <th>Country Name</th>
        
                 <th>Actions</th>
             </tr>
