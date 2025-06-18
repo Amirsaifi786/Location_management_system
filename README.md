@@ -18,19 +18,16 @@ This project offers a robust solution to **bulk import Countries, States, and Ci
 
 ## 📷 Screenshots
 
+
 ### Country Management
-![Permission Edit](screenshots/addcountry.png)
 ![Country Add](screenshots/addcountry.png)
 ![Country List](screenshots/countrylist.png)
-
 ### State Management
 ![State Add](screenshots/addstate.png)
 ![State List](screenshots/statelist.png)
-
 ### City Management
 ![City Add](screenshots/addcity.png)
 ![City List](screenshots/citylist.png)
-
 ---
 
 ## ⚙️ Setup Instructions
