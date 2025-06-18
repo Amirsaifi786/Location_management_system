@@ -76,8 +76,6 @@ Create the necessary database tables by running your migrations.
 Schema::create('countries', function (Blueprint $table) {
     $table->id();
     $table->string('country_name');
-    $table->string('sortname')->nullable();
-    $table->string('phoneCode')->nullable();
     $table->timestamps();
 });
 ```
@@ -117,7 +115,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Country extends Model
 {
-    protected $fillable = ['country_name', 'sortname', 'phoneCode'];
+    protected $fillable = ['country_name'];
 
     public function states()
     {
@@ -179,8 +177,7 @@ Ensure your JSON data files (`countries.json`, `states.json`, `cities.json`) are
     {
       "id": 1,
       "country_name": "India",
-      "sortname": "IN",
-      "phoneCode": "91"
+      
     }
   ]
 }
