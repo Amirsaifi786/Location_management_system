@@ -1,34 +1,40 @@
-```markdown
 # 🌍 Laravel Location Management System
 
-This project offers a robust solution to **bulk import Countries, States, and Cities** into your Laravel application. It leverages a custom Artisan command to process location data from JSON files, ensuring efficient and duplicate-free population of your database.
+This project provides a way to **bulk import Countries, States, and Cities** from JSON files into your Laravel application using a custom Artisan command.
 
 ---
 
 ## 📦 Features
 
-* ✅ **Bulk Import:** Seamlessly import large datasets of countries, states, and cities.
-* ✅ **Duplicate Prevention:** Utilizes `updateOrCreate()` to avoid redundant entries, maintaining data integrity.
-* ✅ **Custom Artisan Command:** Easily trigger imports with `php artisan import:locations`.
-* ✅ **Defined Relationships:** Establishes clear relationships between Country → State → City models.
-* ✅ **JSON-Driven:** Data is imported directly from organized JSON files.
-* ✅ **Laravel 12 Support:** Built with compatibility for the latest Laravel version.
+- ✅ Bulk import of location data (Countries, States, Cities)
+- ✅ Avoids duplicate entries using `updateOrCreate()`
+- ✅ Custom Artisan command: `php artisan import:locations`
+- ✅ Relationships set between Country → State → City
+- ✅ JSON-driven architecture
+- ✅ Laravel 12 support
 
 ---
-
-## 📷 Screenshots
-
-
-### Country Management
+### Country Add
 ![Country Add](screenshots/addcountry.png)
+
+### Country List
 ![Country List](screenshots/countrylist.png)
-### State Management
+
+### State Add
 ![State Add](screenshots/addstate.png)
+
+### State List
 ![State List](screenshots/statelist.png)
-### City Management
+
+### City Add
 ![City Add](screenshots/addcity.png)
+
+### City List
 ![City List](screenshots/citylist.png)
----
+
+## ⚙️ Setup Instructions
+
+### 1️⃣ Create Artisan Command
 
 ## ⚙️ Setup Instructions
 
